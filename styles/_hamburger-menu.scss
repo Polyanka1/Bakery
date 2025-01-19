@@ -1,0 +1,217 @@
+.hamburger-menu {
+
+    .box_checked {
+        left: 0 !important;
+    }
+
+    .span_id2_checked {
+        transform: rotate(45deg);
+        top: 0px !important;
+    }
+        
+    .span_id3_checked {
+        top: 0px !important;
+        transform: rotate(-45deg);
+    }
+
+    .span_id1_checked {
+        top: 0px !important;
+        transform: rotate(45deg);
+    }
+
+    // #menu__toggle:checked ~ &__box {
+    //     left: 0 !important;
+    // }
+
+    // #menu__toggle:checked + &__btn > #i2 {
+    //     transform: rotate(45deg);
+    // }
+        
+    // #menu__toggle:checked + &__btn > #i3 {
+    //     top: 0;
+    //     transform: rotate(-45deg);
+    // }
+
+    // #menu__toggle:checked + &__btn > #i1 {
+    //     top: 0;
+    //     transform: rotate(45deg);
+    // }
+
+    &__checkbox{
+        opacity: 0;
+        position: absolute;
+        top: 37px;
+        right: 20px;
+    }
+ 
+
+    &__btn {
+        position: absolute;
+        top: 37px;
+        right: 20px;
+        width: 26px;
+        height: 26px;
+        cursor: pointer;
+        z-index: 1;
+
+        > #i2,
+        > #i3,
+        > #i1 {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #616161;
+            transition-duration: .25s;
+        }
+
+        
+        > #i3 {
+            // content: '';
+            top: 8px;
+
+        }
+
+        > #i1 {
+            // content: '';
+            top: -8px;
+
+        }
+    }
+
+
+    &__box {
+
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 80px 0;
+        list-style: none;
+        background-color: $color-white;
+        box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+
+        &-logo {
+            position: absolute;
+            top:20px;
+            left: 20px;
+            display: flex;
+            flex-direction: row;
+
+            img {
+                width: 23px;
+                height: 23px;
+                // transform: rotate(-90deg);
+                flex-shrink: 0;
+            }
+
+            p{
+                color: $color-primary;
+                font-family: $font-gerhaus;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    
+        &-item {
+            text-align: center;
+            display: block;
+            padding: 12px 24px;
+            color: $color-black;
+            font-family: $font-nunito;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition-duration: .25s;
+    
+            &:hover {
+                color: $color-primary;
+              }
+        }
+
+        &-icon {
+            width: 120px; 
+            height: 120px; 
+            position: relative;
+            right: -75vw;
+            top: 48%;
+
+
+            &__ecology {
+                height: 100%; 
+                border: 2px solid $color-primary;  
+                border-radius: 50%;
+                display: flex;  
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;  
+        
+        
+                > img {
+                    width: 44px;
+                }
+            
+                > p {
+                    font-family: $font-lora; 
+                    font-weight: 700; 
+                    font-size: 24px; 
+                    color: $color-primary; 
+                    user-select: none;        
+                }
+        
+                &:hover {
+                    border: 2px solid $color-icon; 
+                }
+        
+                &:hover > img {
+                    content: url("../img/mdi_ecology_green.svg");
+                }
+        
+                &:hover > p {
+                    color: $color-icon;
+                }
+            }
+        }
+    }
+}
+
+@media ( min-width: 950px) {
+    .hamburger-menu{
+        &__btn{
+            display: none;
+        }
+
+        &__box {
+            display: none;
+        }
+    }
+}  
+
+@media ( min-width: 360px) and ( max-width: 468px) {
+    .hamburger-menu{
+        &__box {
+            &-icon {
+                right: -67vw;
+            }
+        }
+    }
+}
+
+@media ( max-width: 360px) {
+    .hamburger-menu{
+        &__btn{
+            height: 30px;;
+        }
+
+        &__box {
+            &-icon {
+                right: -60vw;
+            }
+        }
+    }
+}

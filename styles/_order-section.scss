@@ -1,0 +1,153 @@
+.order-section {
+    margin: 0 130px 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px dashed $color-primary;
+
+    color: $color-black;
+    font-family: $font-nunito;
+    font-style: normal;
+    line-height: normal;
+
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > h2 {
+            width: 80%;
+            color: $color-primary;
+            font-size: 36px;
+            font-weight: 500;
+            font-family: $font-lora;
+
+            > span {
+                color: $color-black;
+
+                &:hover {
+                    color: $color-primary
+                }
+            }
+        }
+
+        > p {
+            padding-bottom: 21px;
+            margin: 30px 0;
+            color: $color-black;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+
+    &__container {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+
+        &-input{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+
+            label {
+                font-size: 16px;
+                font-weight: 300;
+            }
+
+            input[type="text"],
+            input[type="tel"] {
+                width: 100%;
+                padding: 12px;
+                align-items: flex-start;
+                flex-shrink: 0;
+                border-radius: 2px;
+                border: 1px solid #F5F5F5;
+                background: #FFF;
+                box-shadow: 2px 2px 6px 0px rgba(10, 10, 10, 0.20);
+                
+                color: $color-black;
+                font-size: 16px;
+                font-weight: 300;
+
+                &:focus {
+                    outline: 2px solid $color-primary;
+                    box-shadow: none;
+                } 
+            }
+
+        }
+        
+    }
+
+    &__button {
+        display: flex;
+        padding: 12px 57px; 
+        margin-top: 40px;
+        align-items: flex-start;
+        background-color: $color-primary;
+        width: 180px;
+        border: none;
+        font-size: 14px;
+        font-family: $font-nunito;
+        color: $color-white;
+        
+
+        &:hover {
+            background-color: $color-black;
+        }
+    }
+
+}
+
+@media ( min-width: 768px) and ( max-width: 1280px) {
+    .order-section {
+        margin: 0 50px 40px;
+    }
+}
+
+@media ( min-width: 360px) and ( max-width: 768px) {
+    .order-section {
+        margin: 0 30px 40px;
+
+        &__header {
+            > h2 {
+              font-size: 32px;  
+            }
+        }
+
+        &__container {
+            align-items: stretch;
+
+            &-input {
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+@media ( max-width: 360px) {
+    .order-section {
+        margin: 0 20px 30px;
+
+        &__header {
+            > h2 {
+              font-size: 26px;  
+            }
+        }
+
+        &__container {
+            flex-direction: column;
+            width: 100%;
+
+            &-input {
+                width: 100%;
+            }
+        }
+    }
+}

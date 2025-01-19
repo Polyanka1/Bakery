@@ -1,0 +1,166 @@
+.advantages-section {
+    padding: 130px;
+    font-style: normal;
+    line-height: normal;
+
+    &__header {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        > h2 {
+            width: 80%;
+            color: $color-black;
+            padding-bottom: 20px;
+            font-size: 36px;
+            font-weight: 500;
+            font-family: $font-lora;
+            margin-bottom: 30px;
+
+            &:hover {
+                color: $color-primary
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 20px;
+
+        &-card{
+            padding: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 6px 0px rgba(10, 10, 10, 0.20);
+            font-family: $font-nunito;
+            font-size: 16px;
+            cursor: pointer;
+            height: 170px;
+            width: 340px;
+
+            > p:first-child {
+                margin: 0 auto 8px auto;
+                color: var(--Red, $color-secondary);
+                background: rgba(235, 87, 87, 0.20);
+                max-width: 33px;
+                font-size: 24px;
+            }
+
+            > p:nth-child(2) {
+                font-weight: 700;
+            }
+
+            > p:last-child {
+                font-weight: 300;
+            }
+
+            &:hover {
+                border: 1px solid $color-primary;
+                box-shadow: none;
+
+                > p:first-child {
+                    background: rgba(251, 206, 116, 0.20);
+                    color: $color-primary;
+                }
+            }
+        }
+        
+    }
+}
+
+@media ( min-width: 768px) and ( max-width: 1280px) {
+    .advantages-section {
+        padding: 130px 50px;
+    }
+}
+
+@media ( max-width: 1150px) {
+    .advantages-section {
+        &__container {
+            flex-wrap: wrap;
+            
+
+            &-card {
+                flex-grow: 1;
+                flex-basis: 390px;
+                height: 210px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media ( max-width: 900px) {
+    .advantages-section {
+        &__container {
+            &-card {
+                flex-basis: 350px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 820px) {
+    .advantages-section {
+        &__container {
+            &-card {
+                flex-basis: 330px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 780px) {
+    .advantages-section {
+        &__container {
+            &-card {
+                flex-basis: 310px;
+            }
+        }
+    }
+}
+
+@media ( min-width: 360px) and ( max-width: 768px) {
+    .advantages-section {
+        padding: 100px 30px;
+
+        &__header {
+            > h2 {
+              font-size: 32px;  
+            }
+        }
+        &__container {
+            
+
+            &-card {
+                flex-basis: 250px;
+            }
+        }
+        
+    }
+
+}
+
+@media ( max-width: 360px) {
+    .advantages-section {
+        padding: 100px 20px;
+
+        &__header {
+            > h2 {
+              font-size: 26px;  
+            }
+        }
+
+        &__container {
+            flex-direction: column;
+
+            &-card {
+                width: 100%;
+                height: auto;
+                flex-basis: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,63 @@
+.dialog {
+    /* Изначально скрыто*/
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    /* Чтобы клики "не проходили" сквозь невидимую модалку */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+
+    &__overlay {
+      position: absolute;
+      top: 0; right: 0; bottom: 0; left: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      pointer-events: none;
+    }
+  
+    &__content {
+        position: relative;
+        z-index: 1;
+        // width: 50%;
+        max-width: 90%;
+        background-color: $color-white;
+        padding: 80px;
+
+      > p {
+        color: #0A0A0A;
+        font-family: Nunito;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    } 
+
+    &__close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        font-size: 24px;
+        cursor: pointer;
+        text-decoration: none;
+        color: #333;
+      }
+}
+
+@media ( max-width: 360px) {
+    .dialog {
+        &__content {
+            padding: 30px;
+    
+            > p {
+                text-align: center;            
+                font-size: 16px;
+            }
+        }
+    }
+}
+

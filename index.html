@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Bakery</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="img/icon.svg" alt="CRUMBS">
+            <p>CRUMBS</p>
+        </div>
+        <nav>
+            <ul class="header__nav">
+                <li class="header__nav-item"><a href="#production">Продукция</a></li>
+                <li class="header__nav-item"><a href="#offers">Горячие предложения</a></li>
+                <li class="header__nav-item"><a href="#cook">Процесс приготовления</a></li>
+                <li class="header__nav-item"><a href="#advantages">Преимущества</a></li>
+                <li class="header__nav-item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header__link">
+            <div class="header__link-button">
+              <a href="#order">Заказать</a>  
+            </div>
+            
+            <div class="hamburger-menu">
+                <input id="menu__toggle" class="hamburger-menu__checkbox" type="checkbox" />
+            <label class="hamburger-menu__btn" for="menu__toggle">
+                <span id="i1"></span>
+                <span id="i2"></span>
+                <span id="i3"></span>
+            </label>  
+
+            <ul class="hamburger-menu__box">
+                <div class="hamburger-menu__box-logo">
+                    <img src="img/icon.svg" alt="CRUMBS">
+                    <p>CRUMBS</p>
+                </div>
+                <li><a class="hamburger-menu__box-item" href="#production">Продукция</a></li>
+                <li><a class="hamburger-menu__box-item" href="#offers">Горячие предложения</a></li>
+                <li><a class="hamburger-menu__box-item" href="#cook">Процесс приготовления</a></li>
+                <li><a class="hamburger-menu__box-item" href="#advantages">Преимущества</a></li>
+                <li><a class="hamburger-menu__box-item" href="#contacts">Контакты</a></li>
+                <div class="hamburger-menu__box-icon">
+                    <div class="icon__ecology">
+                        <img src="img/mdi_ecology_yellow.svg">
+                        <p>100%</p>
+                    </div>
+                </div>
+            </ul>
+            
+          </div>
+        </div>
+        
+    </header>
+    
+     <main class="page">
+        <section class="hero-main">
+          <div class="hero-main__container">
+            <div class="hero-main__header">
+               <h1 class="hero-main__title">Свежая выпечка из <span>натуральных <br>ингридиентов</span></h1>
+                <p class="hero-main__subtitle">Всегда свежие изделия прямо из печи!</p> 
+            </div>
+            
+            <div class="hero-main__button">
+                <a href="#production">Выбрать</a>
+            </div>
+          </div>
+        </section>
+
+        <section id="production" class="production-section">
+            
+            <div class="icon">
+                <div class="icon__ecology">
+                    <img src="img/mdi_ecology_yellow.svg">
+                    <p>100%</p>
+                </div>
+            </div>
+            
+            <div class="production-section__header">  
+                <h2>Наша продукция</h2>
+            </div>
+            <div class="production-section__container">
+                <div class="production-section__item production-card">
+                    <div class="production-card__header">
+                        <div class="production-card__title">
+                            <h3>Хлеб ржаной</h3>
+                            <p>500 гр</p>
+                        </div>
+                        <p>3.80 BYN</p>
+                    </div>
+                    <p>Мука ржаная, соль, вода, закваска, пиво нефильтрованное.</p>
+                    <div class="production-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>241 / 7 / 2 / 48</p>
+                    </div>
+                </div>
+                <div class="production-section__item production-card">
+                    <div class="production-card__header">
+                        <div class="production-card__title">
+                            <h3>Багет Классический</h3>
+                            <p>270 гр</p>
+                        </div>
+                        <p>2.50 BYN</p>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, соль, вода, дрожжи</p>
+                    <div class="production-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>261 / 8 / 2 / 51</p>
+                    </div>
+                </div>
+                <div class="production-section__item production-card">
+                    <div class="production-card__header">
+                        <div class="production-card__title">
+                            <h3>Багет Пшенично-Ржаной</h3>
+                            <p>270 гр</p>
+                        </div>
+                        <p>2.50 BYN</p>
+                    </div>
+                    <p>Мука ржаная обдирная, мука пшеничная высшего сорта, соль, вода, солод ржаной фермертированный, дрожжи.</p>
+                    <div class="production-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>238 / 7 / 2 / 48</p>
+                    </div>
+                </div>
+                <div class="production-section__item production-card">
+                    <div class="production-card__header">
+                        <div class="production-card__title">
+                            <h3>Чабатта</h3>
+                            <p>250 гр</p>
+                        </div>
+                        <p>2.50 BYN</p>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, соль, вода, растительное масло, дрожжи.</p>
+                    <div class="production-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>191 / 6 / 1 / 40</p>
+                    </div>
+                </div>
+                <div class="production-section__item production-card">
+                    <div class="production-card__header">
+                        <div class="production-card__title">
+                            <h3>Хлеб Гречишный</h3>
+                            <p>450 гр</p>
+                        </div>
+                        <p>3.80 BYN</p>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, мука гречневая, соль, вода, закваска ржаная.</p>
+                    <div class="production-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>204 / 6 / 1 / 42</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="offers" class="offers-section">
+
+            <div class="icon">
+                <div class="icon__fire">
+                    <img src="img/mdi_fire_red.svg">
+                    <p>100%</p>
+                </div>
+            </div>
+
+            <div class="offers-section__header">  
+                <h2>Горячие <span>предложения</span></h2>
+            </div>
+            <div class="offers-section__container">
+                <div class="offers-section__item offers-card">
+                    <div class="offers-card__header">
+                        <div class="offers-card__title">
+                            <h3>Синнабон Сливочный</h3>
+                            <p>150 гр</p>
+                        </div>
+                        <div class="offers-card__price">
+                            <p>3.70 BYN</p> 
+                            <p>2.70 BYN</p>  
+                        </div>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, соль, вода, сахарозаменитель, масло сливочное, корица, крем сливочный, дрожжи.</p>
+                    <div class="offers-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>283 / 6 / 12 / 38</p>
+                    </div>
+                </div>
+                <div class="offers-section__item offers-card">
+                    <div class="offers-card__header">
+                        <div class="offers-card__title">
+                            <h3>Синнабон Шоколадный</h3>
+                            <p>150 гр</p>
+                        </div>
+                        <div class="offers-card__price">
+                            <p>3.70 BYN</p> 
+                            <p>2.70 BYN</p>  
+                        </div>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, соль, вода, сахарозаменитель, масло сливочное, корица, крем шоколадный, дрожжи.</p>
+                    <div class="offers-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>301 / 5 / 12 / 40</p>
+                    </div>
+                </div>
+                <div class="offers-section__item offers-card">
+                    <div class="offers-card__header">
+                        <div class="offers-card__title">
+                            <h3>Синнабон Кофейный</h3>
+                            <p>150 гр</p>
+                        </div>
+                        <div class="offers-card__price">
+                            <p>3.70 BYN</p> 
+                            <p>2.70 BYN</p>  
+                        </div>
+                    </div>
+                    <p>Мука пшеничная высшего сорта, соль, вода, сахарозаменитель, масло сливочное, корица, крем кофейный, дрожжи.</p>
+                    <div class="offers-card__info">
+                        <p>КБЖУ на 100 г:</p>
+                        <p>283 / 6 / 11 / 36</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cook" class="cook-section">
+            <div class="cook-section__header">  
+                <h2>Процесс приготовления</h2>
+            </div>
+            <div class="cook-section__media" >
+                <video id="bread" playsinline autoplay muted loop>
+                    <source src="img/video.mp4" type="video/mp4">
+
+                </video>
+            </div>
+        </section>
+
+        <section id="advantages" class="advantages-section">
+            <div class="advantages-section__header">  
+                <h2>Преимущества</h2>
+            </div>
+            <div class="advantages-section__container">
+                <div class="advantages-section__container-card">
+                    <p>1</p>
+                    <p>Эксклюзивные рецепты</p>
+                    <p>Мы разработали собственные рецепты, которые нельзя найти в других пекарнях.</p>
+                </div>
+                <div class="advantages-section__container-card">
+                    <p>2</p>
+                    <p>Натуральные ингридиенты</p>
+                    <p>Мы производяим свежую выпечку, используя только качественные ингредиенты</p>
+                </div>
+                <div class="advantages-section__container-card">
+                    <p>3</p>
+                    <p>Широкий ассортимент</p>
+                    <p>Большой выбор продукции, включая не только хлеб, но и торты, пироги, кексы и т.д.</p>
+                </div>
+                <div class="advantages-section__container-card">
+                    <p>4</p>
+                    <p>Программа лояльности</p>
+                    <p>Скидки и специальные предложения постоянным покупателям.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="order" class="order-section">
+            <div class="order-section__header">
+                <h2><span>Хотите</span> сделать заказ?</h2>
+                <p>Оставьте свои контактные данные, и мы свяжемся с вами в течение 10 минут!</p>
+            </div>
+            
+            <form>
+                <div class="order-section__container">
+                    <div class="order-section__container-input">
+                        <label for="name">1. Введите ваше имя</label>
+                        <input type="text" placeholder="Имя" id="name" required>
+                    </div>
+                    <div class="order-section__container-input">
+                        <label for="phone">2. Введите ваш номер телефона</label>
+                        <input type="tel" placeholder="+375 (29) 222 - 33 -44" id="phone" required>
+                    </div>  
+                </div>
+               
+                <button id="dialog_submit" class="order-section__button">Отправить</button>
+        
+    
+                <!-- Mодальное окно -->
+                <div class="dialog">
+                    <div class="dialog__overlay"></div>
+                    <div id="container" class="dialog__content">
+                        <label for="dialog-toggle" class="dialog__close">&times;</label>
+    
+                        <p>Благодарим Вас за заказ. Свяжемся с вами в течение 10 минут!</p>
+                    </div>
+                </div>
+
+            </form>
+            
+           
+        </section>
+
+        <section class="review-section">
+            <div class="review-section__header">
+                <h2>Будем рады вашей оценке</h2>
+            </div>
+            <div class="review-section__container">
+                <div class="review-section__container-input">
+                    <label for="review">Расскажите нам о ваших впечатлениях!</label>
+                    <textarea type="text" placeholder="Ваше сообщение" id="review"></textarea>
+                </div>
+                <div class="review-section__container-rating">
+                    <label class="review-section__container-rating-radio">
+                        <input type="radio" name="rate" value="one_value"/>
+                        <div>
+                            <img src="img/great.svg" alt="Отлично"> 
+                            <p>Отлично</p>  
+                        </div>
+                    </label>
+                    <label class="review-section__container-rating-radio">
+                        <input type="radio" name="rate" value="one_value"/>
+                        <div>
+                            <img src="img/good.svg" alt="Хорошо"> 
+                            <p>Хорошо</p>  
+                        </div>
+                    </label>
+                    <label class="review-section__container-rating-radio">
+                        <input type="radio" name="rate" value="one_value"/>
+                        <div>
+                            <img src="img/badly.svg" alt="Плохо"> 
+                            <p>Плохо</p>  
+                        </div>
+                    </label>
+                    <label class="review-section__container-rating-radio">
+                        <input type="radio" name="rate" value="one_value"/>
+                        <div>
+                            <img src="img/terrible.svg" alt="Ужасно"> 
+                            <p>Ужасно</p>  
+                        </div>
+                    </label>
+                </div>
+            </div>
+            <button class="review-section__button">Отправить</button>
+        </section>
+
+        <section id="contacts" class="contacts-section">
+            <div class="contacts-section__container">
+                <div class="contacts-section__header">
+                <h2>Контакты</h2>
+                </div>
+                <div class="contacts-section__info">
+                    <div class="contacts-section__info-item">
+                    <p>Адрес</p>
+                    <p>Минск, ул. Немига, 33</p> 
+                    </div>
+                    <div class="contacts-section__info-item">
+                        <p>График работы</p>
+                        <p>10:00 - 22:00</p> 
+                    </div>
+                    <div class="contacts-section__info-item">
+                        <p>Телефон</p>
+                        <p>+375(33)666-77-88</p> 
+                        <p>+375(29)555-44-33</p>
+                    </div>
+                    <div class="contacts-section__info-item">
+                        <p>Электронная почта</p>
+                        <p>bakery@mail.ru</p> 
+                    </div>
+                </div>
+            </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__logo">
+            <img src="img/icon.svg" alt="CRUMBS">
+            <p>CRUMBS</p>
+        </div>
+        <nav>
+            <ul class="footer__nav">
+                <li class="footer__nav-item"><a href="#production">Продукция</a></li>
+                <li class="footer__nav-item"><a href="#offers">Горячие предложения</a></li>
+                <li class="footer__nav-item"><a href="#cook">Процесс приготовления</a></li>
+                <li class="footer__nav-item"><a href="#advantages">Преимущества</a></li>
+                <li class="footer__nav-item"><a href="#contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="footer__link">
+            <div class="footer__logo">
+                <img src="img/icon.svg" alt="CRUMBS">
+                <p>CRUMBS</p>
+            </div>
+                <div>
+                <div class="footer__link-vk">
+                <a href="#"></a> 
+                </div>
+                <div class="footer__link-inst">
+                <a href="#"></a> 
+                </div> 
+            </div>
+        </div>
+      </footer>
+
+      <script src="js/script.js"></script>
+</body>
+</html>
+
